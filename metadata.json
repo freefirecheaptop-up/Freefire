@@ -1,0 +1,6 @@
+{
+  "name": "DIAMOND X STORE - Free Fire Diamond Top-Up",
+  "description": "Premium Free Fire Diamond Top-Up store with instant UID direct delivery, 50% discount offers, secure UPI and card payments, and live order tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

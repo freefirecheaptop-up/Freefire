@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-main: #07080e;
+    --surface-card: #0f111d;
+    --surface-elevated: #161829;
+    --neon-yellow: #e6ff00;
+    --electric-purple: #9d4edd;
+    --electric-purple-glow: rgba(157, 78, 221, 0.4);
+    --border-subtle: #202338;
+  }
+
+  body {
+    background-color: var(--bg-main);
+    color: #f1f5f9;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    overflow-x: hidden;
+    min-height: 100vh;
+  }
+}
+
+/* Custom glow and gaming effects */
+.glow-yellow {
+  box-shadow: 0 0 25px rgba(230, 255, 0, 0.35);
+}
+
+.glow-purple {
+  box-shadow: 0 0 25px rgba(157, 78, 221, 0.45);
+}
+
+.glow-purple-sm {
+  box-shadow: 0 0 12px rgba(157, 78, 221, 0.3);
+}
+
+.glow-cyan {
+  box-shadow: 0 0 25px rgba(6, 182, 212, 0.4);
+}
+
+.border-glow-purple {
+  border-color: rgba(157, 78, 221, 0.6);
+  box-shadow: 0 0 15px rgba(157, 78, 221, 0.25);
+}
+
+.border-glow-yellow {
+  border-color: rgba(230, 255, 0, 0.7);
+  box-shadow: 0 0 15px rgba(230, 255, 0, 0.25);
+}
+
+/* Glassmorphism utility */
+.glass-panel {
+  background: rgba(15, 17, 29, 0.75);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-elevated {
+  background: rgba(22, 24, 41, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(157, 78, 221, 0.2);
+}
+
+/* Subtle scanline grid texture for high-end gaming store */
+.cyber-grid {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #07080e;
+}
+::-webkit-scrollbar-thumb {
+  background: #23263b;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9d4edd;
+}
